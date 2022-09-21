@@ -7,6 +7,7 @@ import Events from '../components/EventsSection';
 import { vision, sponsorships } from '../components/InfoSection/Data';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
+import Vision from '../components/Vision';
 
 const Home = ({isOpen, toggle}) => {
 
@@ -15,7 +16,8 @@ const Home = ({isOpen, toggle}) => {
     <Sidebar isOpen={isOpen} toggle={toggle}/>
     <Navbar toggle={toggle}/>
     <Hero />
-    <InfoSection {...vision}/>
+    <Vision />
+    {/* <InfoSection {...vision}/> */}
     <Events />
     <Exco />
     <InfoSection {...sponsorships}/>

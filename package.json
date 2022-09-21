@@ -25,7 +25,6 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.7",
-    "react-social-media-embed": "^2.2.2",
     "slugify": "^1.6.5",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
@@ -33,12 +32,11 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "node server/server.js",
-    "deploy": "npm run build && gcloud app deploy",
+    "watch-node": "nodemon server/server.js",
     "watch-parcel": "parcel static/index.html",
+    "deploy": "npm run build && gcloud app deploy",
     "build": "parcel build static/index.html",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "concurrently -n \"server,client\" -c \"blue,green\" \"node server/server.js\" \"npm run watch-parcel\""
+    "dev": "concurrently -n \"server,client\" -c \"blue,green\" \"npm run watch-node\" \"npm run watch-parcel\""
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "nodemon": "^2.0.19",
     "parcel": "^2.7.0",
     "process": "^0.11.10"
   },
