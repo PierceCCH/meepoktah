@@ -36,7 +36,10 @@
     "watch-parcel": "parcel static/index.html",
     "deploy": "npm run build && gcloud app deploy",
     "build": "parcel build static/index.html",
-    "dev": "concurrently -n \"server,client\" -c \"blue,green\" \"npm run watch-node\" \"npm run watch-parcel\""
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "livereload": "livereload static -w 100",
+    "dev": "concurrently -n \"server,client,livereload\" -c \"blue,green,yellow\" \"npm run watch-node\" \"npm run watch-parcel\" \"npm run livereload\""
   },
   "eslintConfig": {
     "extends": [
