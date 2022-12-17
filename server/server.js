@@ -5,8 +5,7 @@ const mongoose = require('mongoose')
 const morgan = require('morgan');
 require('dotenv').config();
 
-// const MONGO_URI = process.env.REACT_APP_MONGO_URI;
-const MONGO_URI = "mongodb://localhost:27017/meepoktah";
+const MONGO_URI = process.env.REACT_APP_MONGO_URI;
 
 const app = express();
 const PORT = process.env.PORT  || 8080;
