@@ -3,23 +3,21 @@ import styled from 'styled-components'
 export const VisionContainer = styled.div`
     color: #fff;
     background: #AAAAAA;
-    height: fit-content;
+    height: 1600px;
     
     @media screen and (max-width: 768px){
         padding-top: 100px;
     }
 `
 
-export const VisionHeaderWrapper = styled.div`
+export const VisionBannerWrapper = styled.div`
     display: flex;
-    background: linear-gradient(90deg, rgba(14,18,45,1) 0%, rgba(11,14,36,1) 50%, rgba(14,18,45,1) 100%);
     flex-direction: column;
+    background: #C73b3C;
     justify-content: center;
     align-items: center;
     height: 340px;
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
 `
 
 export const Heading = styled.h1`
@@ -28,6 +26,8 @@ export const Heading = styled.h1`
     font-weight: 600;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
+
+    text-shadow: 5px 2px 15px rgba(0,0,0,0.4);
 
     @media screen and (max-width: 480px){
         font-size: 32px;
@@ -54,10 +54,9 @@ export const ImgBg = styled.img`
 
 export const ImgTextWrapper = styled.div`
     position: absolute;
-    padding-left: 8px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 520%);
+    top: 450px;
+    left: 980px;
+    transform: translate(-50%, 500%);
     color: #fff;
     text-align: left;
     width: 100%;
@@ -89,5 +88,13 @@ export const TopLine = styled.p`
     text-decoration: gold underline;
     text-underline-offset: 12px;
 
+    text-shadow: 5px 2px 10px rgba(0,0,0,0.6);
+`
+
+export const Subtitle = styled.p`
+    max-width: 440px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: #fff;
     text-shadow: 5px 2px 10px rgba(0,0,0,0.6);
 `

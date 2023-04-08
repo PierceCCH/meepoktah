@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import InfoSection from '../components/InfoSection';
 import Events from '../components/EventsSection';
-import { vision, sponsorships } from '../components/InfoSection/Data';
+import { sponsorships } from '../components/InfoSection/Data';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Vision from '../components/Vision';
@@ -17,7 +17,6 @@ const Home = ({isOpen, toggle}) => {
     <Navbar toggle={toggle}/>
     <Hero />
     <Vision />
-    {/* <InfoSection {...vision}/> */}
     <Events />
     <Exco />
     <InfoSection {...sponsorships}/>
