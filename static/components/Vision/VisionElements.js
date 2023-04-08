@@ -25,9 +25,9 @@ export const VisionBannerWrapper = styled.div`
 export const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: 132px;
-    font-weight: 600;
+    font-weight: 800;
     color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Asap', sans-serif;
     text-align: center;
 
     text-shadow: 5px 2px 15px rgba(0,0,0,0.4);
