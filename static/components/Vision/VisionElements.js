@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 
 export const VisionContainer = styled.div`
+    display: flex;
+    flex-direction: column;
     color: #fff;
     background: #AAAAAA;
-    height: 1600px;
+    height: fit-content;
     
     @media screen and (max-width: 768px){
-        padding-top: 100px;
+        height: fit-content;
     }
 `
 
@@ -26,16 +28,25 @@ export const Heading = styled.h1`
     font-weight: 600;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 
     text-shadow: 5px 2px 15px rgba(0,0,0,0.4);
 
     @media screen and (max-width: 480px){
         font-size: 32px;
+        text-align: center;
+    }
+    @media screen and (max-width: 920px){
+        font-size: 56px;
+        text-align: center;
     }
 `
 
 export const VisionWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
     height: 800px;
+    width: 100%;
 `
 
 export const ImgBg = styled.img`
@@ -44,22 +55,20 @@ export const ImgBg = styled.img`
     object-fit: cover;
     transition: all 0.1s ease-in-out;
     filter: blur(1.2px) grayscale(0.3) hue-rotate(-30deg);
-
-    @media screen and (max-width: 768px){
-        max-width: 440px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 `
 
 export const ImgTextWrapper = styled.div`
     position: absolute;
-    top: 450px;
-    left: 980px;
-    transform: translate(-50%, 500%);
+    top: 108rem;
     color: #fff;
     text-align: left;
-    width: 100%;
+    max-width: 95%;
+    padding-left: 12px;
+    padding-right: 24px;
+
+    @media screen and (max-width: 480px){
+        top: 96rem;
+    }
     
     z-index: 2;
 `
@@ -73,8 +82,10 @@ export const ImgText = styled.h1`
     
     text-shadow: 5px 2px 10px rgba(0,0,0,0.6);
 
-    @media screen and (max-width: 480px){
-        font-size: 32px;
+    @media screen and (max-width: 920px){
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 4px;
     }
 `
 
@@ -89,6 +100,12 @@ export const TopLine = styled.p`
     text-underline-offset: 12px;
 
     text-shadow: 5px 2px 10px rgba(0,0,0,0.6);
+
+    @media screen and (max-width: 920px){
+        font-size: 48px;
+        font-weight: 600;
+        text-underline-offset: 8px;
+    }
 `
 
 export const Subtitle = styled.p`
