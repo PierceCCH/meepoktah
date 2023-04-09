@@ -6,10 +6,6 @@ export const VisionContainer = styled.div`
     color: #fff;
     background: #AAAAAA;
     height: fit-content;
-    
-    @media screen and (max-width: 768px){
-        height: fit-content;
-    }
 `
 
 export const VisionBannerWrapper = styled.div`

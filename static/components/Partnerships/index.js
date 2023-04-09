@@ -16,7 +16,7 @@ const Partnerships = () => {
   const subtitleText = "As a community of Singaporean students, we strive to foster a welcoming and inclusive environment for all members. We are eager to collaborate with individuals and organizations  that share our values and goals. Whether you are a fellow student group, alumni, or community member, we look forward to exploring potential collaborations with you!"
 
   return (
-    <PartnershipsContainer>
+    <PartnershipsContainer id="partnerships">
       <PartnershipsTextWrapper>
         <Heading> We're always looking to collaborate. </Heading>
         <Subtitle> {subtitleText} </Subtitle>
